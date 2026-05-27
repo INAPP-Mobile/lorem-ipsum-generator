@@ -474,6 +474,8 @@ export default function Home() {
         </div>
       </div>
 
+      <ContentSection />
+
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=AW-971442831"
@@ -498,4 +500,30 @@ export default function Home() {
       />
     </main>
   );
+}
+
+function ContentSection() {
+  return (
+    <section className="max-w-3xl mx-auto mt-16 space-y-8 text-gray-300 text-sm leading-relaxed">
+      <div className="bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 space-y-4">
+        <h2 className="text-lg font-semibold text-white">About This Tool</h2>
+        <p>Generate placeholder text for your designs, layouts, and mockups. Choose between paragraphs, words, or exact byte counts to fit your needs.</p>
+        <h3 className="text-base font-semibold text-white">Common Use Cases</h3>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Filling content layouts during website and app design</li>
+          <li>Creating mockups for client presentations and approvals</li>
+          <li>Testing typography, spacing, and responsive layouts</li>
+        </ul>
+        <h3 className="text-base font-semibold text-white">Pro Tips</h3>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Generate by paragraphs for long-form layout testing</li>
+          <li>Use the words mode for small placeholders like buttons and labels</li>
+          <li>Try meaningful variations for more realistic client mockups</li>
+        </ul>
+        <p className="text-gray-400 text-xs mt-4">
+          Also check out the <a href="https://words.freeq.one" className="text-blue-400 hover:underline">Word Counter</a> for text statistics. Part of the <a href="https://freeq.one" className="text-blue-400 hover:underline">FreeQ.One</a> tools suite.
+        </p>
+      </div>
+    </section>
+  )
 }
